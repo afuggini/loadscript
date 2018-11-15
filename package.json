@@ -1,0 +1,11 @@
+{
+  "name": "@afuggini/loadscript",
+  "version": "1.0.0",
+  "description": "Loads external Javascript files using asynchronously promises",
+  "main": "index.js",
+  "author": "Ariel Fuggini",
+  "license": "ISC",
+  "dependencies": {
+    "load-script": "^1.0.0"
+  }
+}
