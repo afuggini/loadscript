@@ -14,5 +14,12 @@
   "author": "Ariel Fuggini",
   "dependencies": {
     "load-script": "^1.0.0"
-  }
+  },
+  "keywords": [
+    "browser",
+    "script",
+    "external",
+    "load",
+    "module"
+  ]
 }
