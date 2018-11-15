@@ -6,9 +6,12 @@
     "type": "git",
     "url": "https://github.com/afuggini/loadscript"
   },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "index.js",
   "author": "Ariel Fuggini",
-  "license": "ISC",
   "dependencies": {
     "load-script": "^1.0.0"
   }
