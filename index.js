@@ -5,9 +5,18 @@ module.exports = function (src, opts) {
     cb = opts
     opts = {}
   }
-  return new Promise(function (resolve, reject) {
-    loadScript(src, opts, function (error, script) {
-      error ? reject(error) : resolve(script)
+  var promiseFunction = function (url) {
+    return function (resolve, reject) {
+      loadScript(url, opts, function (error, script) {
+        error ? reject(error) : resolve(script)
+      })
+    }
+  }
+  if (src instanceof Array) {
+    const promises = src.map(function (url) {
+      return new Promise(promiseFunction(url))
     })
-  })
+    return Promise.all(promises)
+  }
+  return new Promise(promiseFunction(src))
 }

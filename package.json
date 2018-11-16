@@ -1,6 +1,6 @@
 {
   "name": "@afuggini/loadscript",
-  "version": "1.0.0",
+  "version": "0.1.2",
   "description": "Loads external Javascript files using asynchronously promises",
   "repository": {
     "type": "git",
