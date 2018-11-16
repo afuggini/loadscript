@@ -1,7 +1,7 @@
 {
   "name": "@afuggini/loadscript",
-  "version": "0.1.2",
-  "description": "Loads external Javascript files using asynchronously promises",
+  "version": "0.1.3",
+  "description": "Loads external Javascript files asynchronously using promises",
   "repository": {
     "type": "git",
     "url": "https://github.com/afuggini/loadscript"
@@ -20,6 +20,9 @@
     "script",
     "external",
     "load",
-    "module"
+    "module",
+    "promise",
+    "include",
+    "require"
   ]
 }
