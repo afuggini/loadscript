@@ -1,4 +1,4 @@
-const loadScript = require('load-script')
+var loadScript = require('load-script')
 
 module.exports = function (src, opts) {
   if (typeof opts === 'function') {
@@ -13,7 +13,7 @@ module.exports = function (src, opts) {
     }
   }
   if (src instanceof Array) {
-    const promises = src.map(function (url) {
+    var promises = src.map(function (url) {
       return new Promise(promiseFunction(url))
     })
     return Promise.all(promises)
