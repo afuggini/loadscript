@@ -1,6 +1,6 @@
 var loadScript = require('load-script')
 
-module.exports = function (src, opts) {
+var loadScripts = function (src, opts) {
   if (typeof opts === 'function') {
     cb = opts
     opts = {}
@@ -20,3 +20,12 @@ module.exports = function (src, opts) {
   }
   return new Promise(promiseFunction(src))
 }
+var ifNotLoaded = function (url) {
+  var scriptExists = document.querySelector('script[src*="' + url + '"]')
+  return {
+    loadScript: scriptExists ? function () {} : loadScripts
+  }
+}
+
+module.exports = loadScripts
+module.exports.ifNotLoaded = ifNotLoaded
