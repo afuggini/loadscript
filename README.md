@@ -8,7 +8,7 @@ Promisified version of https://www.npmjs.com/package/load-script
 
 `@afuggini/loadscript` appends a `script` node to the `<head>` element in the dom.
 
-`require('@fuggini/loadscript')` returns a function of the following interface:  `function(url: string | string[][, opts]): Promise<void> {}`
+`require('@afuggini/loadscript')` returns a function of the following interface:  `function(url: string | string[][, opts]): Promise<void> {}`
 
 ### url
 
